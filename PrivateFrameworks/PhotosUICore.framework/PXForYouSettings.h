@@ -1,0 +1,120 @@
+/* made by EzioChiu
+   Image: /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
+ */
+
+@interface PXForYouSettings : PXSettings {
+    bool  _allowGIFPlayback;
+    bool  _allowLoopPlayback;
+    bool  _allowVideoPlayback;
+    bool  _delayEditRenders;
+    long long  _effectTypeForAutoloop;
+    long long  _effectTypeForLongExposure;
+    long long  _effectTypeForStudioLight;
+    bool  _forceDisplayReportJunk;
+    unsigned long long  _maxSimultaneousVideoCount;
+    bool  _navigateToActivityPost;
+    bool  _showCMMInvitations;
+    bool  _showCMMSuggestions;
+    bool  _showEditSuggestions;
+    bool  _showFooter;
+    bool  _showForYouSettingsAtTopLevel;
+    bool  _showHorizontalGadget;
+    bool  _showInboxLastSeenDate;
+    bool  _showMemories;
+    bool  _showRecentInterestSuggestions;
+    bool  _showSampleSuggestionGadgets;
+    bool  _showSharedAlbumActivity;
+    bool  _showSharedAlbumInbox;
+    bool  _showTapToRadar;
+    bool  _showVerticalSampleGadgets;
+    bool  _useCachedEditRenders;
+    bool  _useMockData;
+}
+
+@property (nonatomic) bool allowGIFPlayback;
+@property (nonatomic) bool allowLoopPlayback;
+@property (nonatomic) bool allowVideoPlayback;
+@property (nonatomic) bool delayEditRenders;
+@property (nonatomic) long long effectTypeForAutoloop;
+@property (nonatomic) long long effectTypeForLongExposure;
+@property (nonatomic) long long effectTypeForStudioLight;
+@property (nonatomic) bool forceDisplayReportJunk;
+@property (nonatomic) unsigned long long maxSimultaneousVideoCount;
+@property (nonatomic) bool navigateToActivityPost;
+@property (nonatomic) bool showCMMInvitations;
+@property (nonatomic) bool showCMMSuggestions;
+@property (nonatomic) bool showEditSuggestions;
+@property (nonatomic) bool showFooter;
+@property (nonatomic) bool showForYouSettingsAtTopLevel;
+@property (nonatomic) bool showHorizontalGadget;
+@property (nonatomic) bool showInboxLastSeenDate;
+@property (nonatomic) bool showMemories;
+@property (nonatomic) bool showRecentInterestSuggestions;
+@property (nonatomic) bool showSampleSuggestionGadgets;
+@property (nonatomic) bool showSharedAlbumActivity;
+@property (nonatomic) bool showSharedAlbumInbox;
+@property (nonatomic) bool showTapToRadar;
+@property (nonatomic) bool showVerticalSampleGadgets;
+@property (nonatomic) bool useCachedEditRenders;
+@property (nonatomic) bool useMockData;
+
++ (id)keyPathsAffectingGadgetVisibility;
++ (id)settingsControllerModule;
++ (id)sharedInstance;
+
+- (bool)allowGIFPlayback;
+- (bool)allowLoopPlayback;
+- (bool)allowVideoPlayback;
+- (bool)delayEditRenders;
+- (long long)effectTypeForAutoloop;
+- (long long)effectTypeForLongExposure;
+- (long long)effectTypeForStudioLight;
+- (bool)forceDisplayReportJunk;
+- (unsigned long long)maxSimultaneousVideoCount;
+- (bool)navigateToActivityPost;
+- (id)parentSettings;
+- (void)setAllowGIFPlayback:(bool)arg1;
+- (void)setAllowLoopPlayback:(bool)arg1;
+- (void)setAllowVideoPlayback:(bool)arg1;
+- (void)setDefaultValues;
+- (void)setDelayEditRenders:(bool)arg1;
+- (void)setEffectTypeForAutoloop:(long long)arg1;
+- (void)setEffectTypeForLongExposure:(long long)arg1;
+- (void)setEffectTypeForStudioLight:(long long)arg1;
+- (void)setForceDisplayReportJunk:(bool)arg1;
+- (void)setMaxSimultaneousVideoCount:(unsigned long long)arg1;
+- (void)setNavigateToActivityPost:(bool)arg1;
+- (void)setShowCMMInvitations:(bool)arg1;
+- (void)setShowCMMSuggestions:(bool)arg1;
+- (void)setShowEditSuggestions:(bool)arg1;
+- (void)setShowFooter:(bool)arg1;
+- (void)setShowForYouSettingsAtTopLevel:(bool)arg1;
+- (void)setShowHorizontalGadget:(bool)arg1;
+- (void)setShowInboxLastSeenDate:(bool)arg1;
+- (void)setShowMemories:(bool)arg1;
+- (void)setShowRecentInterestSuggestions:(bool)arg1;
+- (void)setShowSampleSuggestionGadgets:(bool)arg1;
+- (void)setShowSharedAlbumActivity:(bool)arg1;
+- (void)setShowSharedAlbumInbox:(bool)arg1;
+- (void)setShowTapToRadar:(bool)arg1;
+- (void)setShowVerticalSampleGadgets:(bool)arg1;
+- (void)setUseCachedEditRenders:(bool)arg1;
+- (void)setUseMockData:(bool)arg1;
+- (bool)showCMMInvitations;
+- (bool)showCMMSuggestions;
+- (bool)showEditSuggestions;
+- (bool)showFooter;
+- (bool)showForYouSettingsAtTopLevel;
+- (bool)showHorizontalGadget;
+- (bool)showInboxLastSeenDate;
+- (bool)showMemories;
+- (bool)showRecentInterestSuggestions;
+- (bool)showSampleSuggestionGadgets;
+- (bool)showSharedAlbumActivity;
+- (bool)showSharedAlbumInbox;
+- (bool)showTapToRadar;
+- (bool)showVerticalSampleGadgets;
+- (bool)useCachedEditRenders;
+- (bool)useMockData;
+
+@end

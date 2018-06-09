@@ -1,0 +1,110 @@
+/* made by EzioChiu
+   Image: /System/Library/Frameworks/Intents.framework/Intents
+ */
+
+@interface _INPBPair : PBCodable <INCodableAttributeAssociating, NSCopying, NSSecureCoding, _INPBPair> {
+    INCodableAttribute * _associatedCodableAttribute;
+    struct { }  _has;
+    NSString * _key;
+    _INPBCurrencyAmountValue * _pairCurrencyAmountValue;
+    _INPBCustomObject * _pairCustomObject;
+    _INPBDataString * _pairDataString;
+    _INPBDistanceValue * _pairDistanceValue;
+    _INPBDoubleValue * _pairDoubleValue;
+    _INPBImageValue * _pairImageValue;
+    _INPBIntegerValue * _pairIntegerValue;
+    _INPBLocationValue * _pairLocationValue;
+    _INPBPaymentMethodValue * _pairPaymentMethodValue;
+    _INPBContactValue * _pairPersonValue;
+    _INPBStringValue * _pairStringValue;
+    _INPBTemperatureValue * _pairTemperatureValue;
+    _INPBURLValue * _pairUrlValue;
+}
+
+@property (nonatomic, copy) INCodableAttribute *associatedCodableAttribute;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasKey;
+@property (nonatomic, readonly) bool hasPairCurrencyAmountValue;
+@property (nonatomic, readonly) bool hasPairCustomObject;
+@property (nonatomic, readonly) bool hasPairDataString;
+@property (nonatomic, readonly) bool hasPairDistanceValue;
+@property (nonatomic, readonly) bool hasPairDoubleValue;
+@property (nonatomic, readonly) bool hasPairImageValue;
+@property (nonatomic, readonly) bool hasPairIntegerValue;
+@property (nonatomic, readonly) bool hasPairLocationValue;
+@property (nonatomic, readonly) bool hasPairPaymentMethodValue;
+@property (nonatomic, readonly) bool hasPairPersonValue;
+@property (nonatomic, readonly) bool hasPairStringValue;
+@property (nonatomic, readonly) bool hasPairTemperatureValue;
+@property (nonatomic, readonly) bool hasPairUrlValue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic, retain) _INPBCurrencyAmountValue *pairCurrencyAmountValue;
+@property (nonatomic, retain) _INPBCustomObject *pairCustomObject;
+@property (nonatomic, retain) _INPBDataString *pairDataString;
+@property (nonatomic, retain) _INPBDistanceValue *pairDistanceValue;
+@property (nonatomic, retain) _INPBDoubleValue *pairDoubleValue;
+@property (nonatomic, retain) _INPBImageValue *pairImageValue;
+@property (nonatomic, retain) _INPBIntegerValue *pairIntegerValue;
+@property (nonatomic, retain) _INPBLocationValue *pairLocationValue;
+@property (nonatomic, retain) _INPBPaymentMethodValue *pairPaymentMethodValue;
+@property (nonatomic, retain) _INPBContactValue *pairPersonValue;
+@property (nonatomic, retain) _INPBStringValue *pairStringValue;
+@property (nonatomic, retain) _INPBTemperatureValue *pairTemperatureValue;
+@property (nonatomic, retain) _INPBURLValue *pairUrlValue;
+@property (readonly) Class superclass;
+
+- (void).cxx_destruct;
+- (id)associatedCodableAttribute;
+- (id)copyWithZone:(struct _NSZone { }*)arg1;
+- (id)dictionaryRepresentation;
+- (bool)hasKey;
+- (bool)hasPairCurrencyAmountValue;
+- (bool)hasPairCustomObject;
+- (bool)hasPairDataString;
+- (bool)hasPairDistanceValue;
+- (bool)hasPairDoubleValue;
+- (bool)hasPairImageValue;
+- (bool)hasPairIntegerValue;
+- (bool)hasPairLocationValue;
+- (bool)hasPairPaymentMethodValue;
+- (bool)hasPairPersonValue;
+- (bool)hasPairStringValue;
+- (bool)hasPairTemperatureValue;
+- (bool)hasPairUrlValue;
+- (unsigned long long)hash;
+- (bool)isEqual:(id)arg1;
+- (id)key;
+- (id)pairCurrencyAmountValue;
+- (id)pairCustomObject;
+- (id)pairDataString;
+- (id)pairDistanceValue;
+- (id)pairDoubleValue;
+- (id)pairImageValue;
+- (id)pairIntegerValue;
+- (id)pairLocationValue;
+- (id)pairPaymentMethodValue;
+- (id)pairPersonValue;
+- (id)pairStringValue;
+- (id)pairTemperatureValue;
+- (id)pairUrlValue;
+- (bool)readFrom:(id)arg1;
+- (void)setAssociatedCodableAttribute:(id)arg1;
+- (void)setKey:(id)arg1;
+- (void)setPairCurrencyAmountValue:(id)arg1;
+- (void)setPairCustomObject:(id)arg1;
+- (void)setPairDataString:(id)arg1;
+- (void)setPairDistanceValue:(id)arg1;
+- (void)setPairDoubleValue:(id)arg1;
+- (void)setPairImageValue:(id)arg1;
+- (void)setPairIntegerValue:(id)arg1;
+- (void)setPairLocationValue:(id)arg1;
+- (void)setPairPaymentMethodValue:(id)arg1;
+- (void)setPairPersonValue:(id)arg1;
+- (void)setPairStringValue:(id)arg1;
+- (void)setPairTemperatureValue:(id)arg1;
+- (void)setPairUrlValue:(id)arg1;
+- (void)writeTo:(id)arg1;
+
+@end

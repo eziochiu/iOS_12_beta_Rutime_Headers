@@ -1,0 +1,121 @@
+/* made by EzioChiu
+   Image: /System/Library/PrivateFrameworks/PlatterKit.framework/PlatterKit
+ */
+
+@interface PLExpandedPlatterView : UIView <PLContentSizeCategoryAdjusting, PLExpandedPlatter, PLTitled, UIGestureRecognizerDelegate, UIScrollViewDelegate> {
+    MTMaterialView * _actionsBackgroundView;
+    bool  _actionsHidden;
+    PLKeyLineView * _actionsKeyLineView;
+    PLInterfaceActionGroupView * _actionsView;
+    UIView * _contentView;
+    struct CGSize { 
+        double width; 
+        double height; 
+    }  _customContentSize;
+    UIView * _customContentView;
+    UIControl * _dismissControl;
+    PLPlatterHeaderContentView * _headerContentView;
+    UIView * _headerDivider;
+    UIView * _mainContentView;
+    UIScrollView * _scrollView;
+    UIView * _topRubberbandingView;
+}
+
+@property (getter=isActionsHidden, nonatomic) bool actionsHidden;
+@property (getter=_actionsKeyLineView, nonatomic, readonly) UIView *actionsKeyLineView;
+@property (nonatomic) bool adjustsFontForContentSizeCategory;
+@property (getter=isBackgroundBlurred, nonatomic) bool backgroundBlurred;
+@property (nonatomic) struct CGSize { double x1; double x2; } customContentSize;
+@property (nonatomic, readonly) UIView *customContentView;
+@property (nonatomic, copy) NSDate *date;
+@property (getter=isDateAllDay, nonatomic) bool dateAllDay;
+@property (nonatomic) long long dateFormatStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UIControl *dismissControl;
+@property (nonatomic) bool hasShadow;
+@property (readonly) unsigned long long hash;
+@property (getter=_headerContentView, nonatomic, readonly) UIView *headerContentView;
+@property (nonatomic, readonly) NSArray *iconButtons;
+@property (nonatomic, copy) NSArray *icons;
+@property (nonatomic, retain) NSArray *interfaceActions;
+@property (getter=_mainContentView, nonatomic, readonly) UIView *mainContentView;
+@property (getter=_mainContentView, nonatomic, retain) UIView *mainContentView;
+@property (nonatomic, copy) NSString *preferredContentSizeCategory;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSTimeZone *timeZone;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) UIButton *utilityButton;
+
+- (void).cxx_destruct;
+- (id)_actionsKeyLineView;
+- (struct CGSize { double x1; double x2; })_actionsSizeThatFits:(struct CGSize { double x1; double x2; })arg1 includingPadding:(bool)arg2;
+- (void)_configureActionViewIfNecessaryWithActions:(id)arg1;
+- (void)_configureActionsBackgroundViewIfNecessaryWithActions:(id)arg1;
+- (void)_configureActionsKeyLineViewIfNecessaryWithActions:(id)arg1;
+- (void)_configureContentViewIfNecessary;
+- (void)_configureCustomContentView;
+- (void)_configureCustomContentViewIfNecessary;
+- (void)_configureDismissControlIfNecessary;
+- (void)_configureHeaderContentViewIfNecessary;
+- (void)_configureMainContentViewIfNecessary;
+- (void)_configureScrollViewIfNecessary;
+- (struct CGSize { double x1; double x2; })_contentSizeThatFitsContentWithSizeExcludingActions:(struct CGSize { double x1; double x2; })arg1;
+- (id)_headerContentView;
+- (void)_layoutActionsKeyLineView;
+- (void)_layoutActionsView;
+- (void)_layoutContentView;
+- (void)_layoutCustomContentView;
+- (void)_layoutDismissControl;
+- (void)_layoutHeader;
+- (void)_layoutMainContentView;
+- (void)_layoutScrollView;
+- (void)_layoutTopRubberbandingView;
+- (id)_mainContentView;
+- (struct CGSize { double x1; double x2; })_sizeThatFitsContentExcludingActionsWithSize:(struct CGSize { double x1; double x2; })arg1;
+- (struct CGSize { double x1; double x2; })actionsSizeThatFits:(struct CGSize { double x1; double x2; })arg1;
+- (bool)adjustForContentSizeCategoryChange;
+- (bool)adjustsFontForContentSizeCategory;
+- (struct CGSize { double x1; double x2; })contentSizeExcludingActions;
+- (struct CGSize { double x1; double x2; })contentSizeForSize:(struct CGSize { double x1; double x2; })arg1;
+- (struct CGSize { double x1; double x2; })customContentSize;
+- (id)customContentView;
+- (id)date;
+- (long long)dateFormatStyle;
+- (id)dismissControl;
+- (bool)hasShadow;
+- (id)iconButtons;
+- (id)icons;
+- (id)interfaceActions;
+- (bool)isActionsHidden;
+- (bool)isBackgroundBlurred;
+- (bool)isDateAllDay;
+- (void)layoutSubviews;
+- (bool)pointInside:(struct CGPoint { double x1; double x2; })arg1 withEvent:(id)arg2;
+- (id)scrollView;
+- (void)scrollViewDidEndDragging:(id)arg1 willDecelerate:(bool)arg2;
+- (void)scrollViewDidScroll:(id)arg1;
+- (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })scrollViewFrame;
+- (void)setActionsHidden:(bool)arg1;
+- (void)setAdjustsFontForContentSizeCategory:(bool)arg1;
+- (void)setBackgroundBlurred:(bool)arg1;
+- (void)setCustomContentSize:(struct CGSize { double x1; double x2; })arg1;
+- (void)setDate:(id)arg1;
+- (void)setDateAllDay:(bool)arg1;
+- (void)setDateFormatStyle:(long long)arg1;
+- (void)setHasShadow:(bool)arg1;
+- (void)setIcons:(id)arg1;
+- (void)setInterfaceActions:(id)arg1;
+- (void)setMainContentView:(id)arg1;
+- (void)setTimeZone:(id)arg1;
+- (void)setTitle:(id)arg1;
+- (struct CGSize { double x1; double x2; })sizeExcludingActions;
+- (struct CGSize { double x1; double x2; })sizeThatFits:(struct CGSize { double x1; double x2; })arg1;
+- (struct CGSize { double x1; double x2; })sizeThatFitsContentWithSize:(struct CGSize { double x1; double x2; })arg1;
+- (id)timeZone;
+- (id)title;
+- (void)traitCollectionDidChange:(id)arg1;
+- (id)utilityButton;
+
+@end

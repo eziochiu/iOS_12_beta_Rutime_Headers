@@ -1,0 +1,111 @@
+/* made by EzioChiu
+   Image: /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
+ */
+
+@interface PXForYouGadgetDataSourceManager : PXGadgetDataSourceManager <PXCMMCloudGadgetViewControllerDelegate, PXChangeObserver, PXPhotoLibraryUIChangeObserver> {
+    PXCloudWelcomeGadgetProvider * _CMMCloudWelcomeGadgetProvider;
+    PXCMMInvitationsHorizontalGadgetProvider * _CMMInvitationsHorizontalGadgetProvider;
+    PXCMMSuggestionsHorizontalGadgetProvider * _CMMSuggestionsHorizontalGadgetProvider;
+    PXForYouBadgeManager * _badgeManager;
+    long long  _cmmInviteRank;
+    PXForYouSuggestionsGadgetProvider * _editSuggestionsGadgetProvider;
+    PXHorizontalCollectionGadgetProvider * _editSuggestionsHorizontalGadgetProvider;
+    PXForYouFooterGadgetProvider * _footerGadgetProvider;
+    PXNoContentGadget * _fyNoContentGadget;
+    <PXGadgetNavigating> * _gadgetNavigator;
+    NSArray * _gadgetProviders;
+    PXSharedAlbumActivityHorizontalGadgetProvider * _icpsActivityHorizontalGadgetProvider;
+    PXForYouMemoryGadgetProvider * _memoryGadgetProvider;
+    PXHorizontalCollectionGadgetProvider * _recentInterestSuggestionsHorizontalGadgetProvider;
+    PXForYouSuggestionsGadgetProvider * _recentInterestsSuggestionsGadgetProvider;
+    PXSampleGadgetProvider * _sampleGadgetsProvider;
+    PXSampleSuggestionProvider * _sampleSuggestionGadgetsProvider;
+    long long  _sharedAlbumsRank;
+    PHFetchResult * _singleAssetFetchResult;
+    NSMutableDictionary * _sortingRanks;
+    PXTapToRadarGadgetProvider * _tapToRadarProvider;
+}
+
+@property (nonatomic, retain) PXCloudWelcomeGadgetProvider *CMMCloudWelcomeGadgetProvider;
+@property (nonatomic, retain) PXCMMInvitationsHorizontalGadgetProvider *CMMInvitationsHorizontalGadgetProvider;
+@property (nonatomic, retain) PXCMMSuggestionsHorizontalGadgetProvider *CMMSuggestionsHorizontalGadgetProvider;
+@property (nonatomic, retain) PXForYouBadgeManager *badgeManager;
+@property (nonatomic) long long cmmInviteRank;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) PXForYouSuggestionsGadgetProvider *editSuggestionsGadgetProvider;
+@property (nonatomic, retain) PXHorizontalCollectionGadgetProvider *editSuggestionsHorizontalGadgetProvider;
+@property (nonatomic, retain) PXForYouFooterGadgetProvider *footerGadgetProvider;
+@property (nonatomic, retain) PXNoContentGadget *fyNoContentGadget;
+@property (nonatomic) <PXGadgetNavigating> *gadgetNavigator;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PXSharedAlbumActivityHorizontalGadgetProvider *icpsActivityHorizontalGadgetProvider;
+@property (nonatomic, retain) PXForYouMemoryGadgetProvider *memoryGadgetProvider;
+@property (nonatomic) <PXGadgetDelegate> *nextGadgetResponder;
+@property (nonatomic, retain) PXHorizontalCollectionGadgetProvider *recentInterestSuggestionsHorizontalGadgetProvider;
+@property (nonatomic, retain) PXForYouSuggestionsGadgetProvider *recentInterestsSuggestionsGadgetProvider;
+@property (nonatomic, retain) PXSampleGadgetProvider *sampleGadgetsProvider;
+@property (nonatomic, retain) PXSampleSuggestionProvider *sampleSuggestionGadgetsProvider;
+@property (nonatomic) long long sharedAlbumsRank;
+@property (nonatomic, retain) PHFetchResult *singleAssetFetchResult;
+@property (nonatomic, retain) NSMutableDictionary *sortingRanks;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) PXTapToRadarGadgetProvider *tapToRadarProvider;
+
+- (void).cxx_destruct;
+- (id)CMMCloudWelcomeGadgetProvider;
+- (id)CMMInvitationsHorizontalGadgetProvider;
+- (id)CMMSuggestionsHorizontalGadgetProvider;
+- (id)_singleAssetFetchResult;
+- (id)_sortingRankForGadget:(id)arg1;
+- (void)_updateDynamicSortingRanks;
+- (void)_updateNoContentView;
+- (id)badgeManager;
+- (long long)cmmInviteRank;
+- (void)didUpdateCloudPhotoLibraryEnablement:(id)arg1;
+- (id)editSuggestionsGadgetProvider;
+- (id)editSuggestionsHorizontalGadgetProvider;
+- (id)filteredUndisplayedGadgets:(id)arg1;
+- (id)footerGadgetProvider;
+- (id)fyNoContentGadget;
+- (id)gadgetNavigator;
+- (id)gadgetProviders;
+- (id /* block */)gadgetSortComparator;
+- (id)icpsActivityHorizontalGadgetProvider;
+- (id)init;
+- (id)memoryGadgetProvider;
+- (id)noContentGadget;
+- (void)observable:(id)arg1 didChange:(unsigned long long)arg2 context:(void*)arg3;
+- (void)photoLibraryDidChangeOnMainQueue:(id)arg1;
+- (void)presentationRequestForWelcomeCloudViewController:(id)arg1;
+- (id)recentInterestSuggestionsHorizontalGadgetProvider;
+- (id)recentInterestsSuggestionsGadgetProvider;
+- (void)removeCachedProviders;
+- (id)sampleGadgetsProvider;
+- (id)sampleSuggestionGadgetsProvider;
+- (void)setBadgeManager:(id)arg1;
+- (void)setCMMCloudWelcomeGadgetProvider:(id)arg1;
+- (void)setCMMInvitationsHorizontalGadgetProvider:(id)arg1;
+- (void)setCMMSuggestionsHorizontalGadgetProvider:(id)arg1;
+- (void)setCmmInviteRank:(long long)arg1;
+- (void)setEditSuggestionsGadgetProvider:(id)arg1;
+- (void)setEditSuggestionsHorizontalGadgetProvider:(id)arg1;
+- (void)setFooterGadgetProvider:(id)arg1;
+- (void)setFyNoContentGadget:(id)arg1;
+- (void)setGadgetNavigator:(id)arg1;
+- (void)setIcpsActivityHorizontalGadgetProvider:(id)arg1;
+- (void)setMemoryGadgetProvider:(id)arg1;
+- (void)setRecentInterestSuggestionsHorizontalGadgetProvider:(id)arg1;
+- (void)setRecentInterestsSuggestionsGadgetProvider:(id)arg1;
+- (void)setSampleGadgetsProvider:(id)arg1;
+- (void)setSampleSuggestionGadgetsProvider:(id)arg1;
+- (void)setSharedAlbumsRank:(long long)arg1;
+- (void)setSingleAssetFetchResult:(id)arg1;
+- (void)setSortingRanks:(id)arg1;
+- (void)setTapToRadarProvider:(id)arg1;
+- (long long)sharedAlbumsRank;
+- (id)singleAssetFetchResult;
+- (id)sortingRanks;
+- (id)tapToRadarProvider;
+
+@end

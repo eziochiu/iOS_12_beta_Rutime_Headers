@@ -1,0 +1,11 @@
+/* made by EzioChiu.
+ */
+
+@protocol MPCModelPlaybackRequestEnvironmentConsuming <NSObject>
+
+@required
+
+- (MPCPlaybackRequestEnvironment *)playbackRequestEnvironment;
+- (void)setPlaybackRequestEnvironment:(MPCPlaybackRequestEnvironment *)arg1;
+
+@end

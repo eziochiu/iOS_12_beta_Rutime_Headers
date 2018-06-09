@@ -1,0 +1,10 @@
+/* made by EzioChiu.
+ */
+
+@protocol PSYSyncStateObserverInterface <NSObject>
+
+@required
+
+- (oneway void)didUpdateSyncForPairingID:(NSUUID *)arg1;
+
+@end

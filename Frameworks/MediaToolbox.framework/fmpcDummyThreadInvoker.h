@@ -1,0 +1,9 @@
+/* made by EzioChiu
+   Image: /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+ */
+
+@interface fmpcDummyThreadInvoker : NSObject
+
++ (void)invokeThread:(id)arg1;
+
+@end
